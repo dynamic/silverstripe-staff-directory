@@ -25,6 +25,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
-        "installer-name": "core-tools"
+        "installer-name": "staff-directory"
     }
 }
