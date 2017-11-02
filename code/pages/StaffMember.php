@@ -79,42 +79,42 @@ class StaffMember extends Page
      */
     public function getCMSFields()
     {
-        $fields = parent::getCMSFields();
+        $this->beforeUpdateCMSFields(function ($fields) {
+            /*
+            $fields->removeByName(array(
+                'MenuTitle',
+            ));
+            */
 
-        /*
-        $fields->removeByName(array(
-            'MenuTitle',
-        ));
-        */
+            //$fields->push(HiddenField::create('MenuTitle'));
 
-        //$fields->push(HiddenField::create('MenuTitle'));
+            $imageField = UploadField::create('Image', 'Image')
+                ->setFolderName('Uploads/StaffMembers')
+                ->setAllowedFileCategories('image')
+                ->setAllowedMaxFileNumber(1);
+            $imageField->getValidator()->allowedExtensions = array('jpg', 'gif', 'png');
 
-        $imageField = UploadField::create('Image', 'Image')
-            ->setFolderName('Uploads/StaffMembers')
-            ->setAllowedFileCategories('image')
-            ->setAllowedMaxFileNumber(1)
-        ;
-        $imageField->getValidator()->allowedExtensions = array('jpg', 'gif', 'png');
+            $fields->addFieldToTab('Root.Main', TextField::create('Position'), 'Content');
+            $fields->addFieldToTab('Root.Main', TextField::create('OfficeLocation'), 'Content');
+            $fields->addFieldToTab('Root.Main', $imageField, 'Content');
 
-        $fields->addFieldToTab('Root.Main', TextField::create('Position'), 'Content');
-        $fields->addFieldToTab('Root.Main', TextField::create('OfficeLocation'), 'Content');
-        $fields->addFieldToTab('Root.Main', $imageField, 'Content');
+            $fields->addFieldsToTab('Root.Contact', array(
+                EmailField::create('Email'),
+                TextField::create('Phone'),
+                TextField::create('Mobile'),
+                TextField::create('Fax'),
+                TextField::create('Website'),
+                TextField::create('Twitter'),
+                TextField::create('Facebook'),
+                TextField::create('LinkedIn'),
+            ));
 
-        $fields->addFieldsToTab('Root.Contact', array(
-            EmailField::create('Email'),
-            TextField::create('Phone'),
-            TextField::create('Mobile'),
-            TextField::create('Fax'),
-            TextField::create('Website'),
-            TextField::create('Twitter'),
-            TextField::create('Facebook'),
-            TextField::create('LinkedIn'),
-        ));
+            $fields->dataFieldByName('Title')->setTitle('Name');
+            $fields->dataFieldByName('Content')->setTitle('Biography');
 
-        $fields->dataFieldByName('Title')->setTitle('Name');
-        $fields->dataFieldByName('Content')->setTitle('Biography');
+        });
 
-        return $fields;
+        return parent::getCMSFields();
     }
 }
 
