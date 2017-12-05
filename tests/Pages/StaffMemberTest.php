@@ -23,5 +23,4 @@ class StaffMemberTest extends SapphireTest
         $object = Injector::inst()->create(StaffMember::class);
         $this->assertInstanceOf(FieldList::class, $object->getCMSFields());
     }
-
 }

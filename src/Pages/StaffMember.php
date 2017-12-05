@@ -124,7 +124,6 @@ class StaffMember extends Page
 
             $fields->dataFieldByName('Title')->setTitle('Name');
             $fields->dataFieldByName('Content')->setTitle('Biography');
-
         });
 
         return parent::getCMSFields();

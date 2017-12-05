@@ -37,5 +37,4 @@ class StaffDirectoryTest extends SapphireTest
         $this->assertInstanceOf(DataList::class, $staff);
         $this->assertEquals(3, $staff->count());
     }
-
 }
