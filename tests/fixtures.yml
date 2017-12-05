@@ -1,0 +1,14 @@
+Dynamic\Staff\Pages\StaffDirectory:
+  default:
+    Title: default
+
+Dynamic\Staff\Pages\StaffMember:
+  one:
+    Title: 'Arthur Belling'
+    Parent: =>Dynamic\Staff\Pages\StaffDirectory.default
+  two:
+    Title: 'Mr. Badger'
+    Parent: =>Dynamic\Staff\Pages\StaffDirectory.default
+  three:
+    Title: 'Spiny Norman'
+    Parent: =>Dynamic\Staff\Pages\StaffDirectory.default
