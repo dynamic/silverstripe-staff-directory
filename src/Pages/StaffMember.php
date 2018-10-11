@@ -18,6 +18,11 @@ class StaffMember extends Page
     /**
      * @var string
      */
+    private static $table_name = 'StaffMember';
+
+    /**
+     * @var string
+     */
     private static $singular_name = 'Staff Member';
 
     /**
