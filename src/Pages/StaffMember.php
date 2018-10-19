@@ -2,7 +2,6 @@
 
 namespace Dynamic\Staff\Pages;
 
-use Page;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
 use SilverStripe\Forms\EmailField;
@@ -13,7 +12,7 @@ use SilverStripe\Forms\TextField;
  * Class StaffMember
  * @package Dynamic\Staff\Pages
  */
-class StaffMember extends Page
+class StaffMember extends \Page
 {
     /**
      * @var string
@@ -52,6 +51,13 @@ class StaffMember extends Page
     private static $has_one = array(
         'Image' => Image::class,
     );
+
+    /**
+     * @var array
+     */
+    private static $owns = [
+        'Image',
+    ];
 
     /**
      * @var array
@@ -98,14 +104,6 @@ class StaffMember extends Page
     public function getCMSFields()
     {
         $this->beforeUpdateCMSFields(function (FieldList $fields) {
-            /*
-            $fields->removeByName(array(
-                'MenuTitle',
-            ));
-            */
-
-            //$fields->push(HiddenField::create('MenuTitle'));
-
             $imageField = UploadField::create('Image', 'Image')
                 ->setFolderName('Uploads/StaffMembers')
                 ->setAllowedFileCategories('image')

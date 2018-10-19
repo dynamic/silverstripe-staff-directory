@@ -4,7 +4,8 @@
     "authors": [
         {
             "name": "Dynamic, Inc",
-            "email": "dev@dy.ag"
+            "email": "dev@dynamicagency.com",
+            "homepage": "http://www.dynamicagency.com"
         }
     ],
     "keywords": [
@@ -33,7 +34,6 @@
     "prefer-stable": true,
     "extra": {
         "branch-alias": {
-            "dev-1.0": "1.0.x-dev",
             "dev-master": "2.0.x-dev"
         }
     }
