@@ -35,6 +35,11 @@ class StaffDirectory extends Page
     );
 
     /**
+     * @var string
+     */
+    private static $table_name = 'StaffDirectory';
+
+    /**
      * Return staff members
      *
      * @return DataList
