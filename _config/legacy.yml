@@ -1,0 +1,7 @@
+---
+name: staff-directory-legacy
+---
+SilverStripe\ORM\DatabaseAdmin:
+  classname_value_remapping:
+    StaffDirectory: Dynamic\Staff\Pages\StaffDirectory
+    StaffMember: Dynamic\Staff\Pages\StaffMember
