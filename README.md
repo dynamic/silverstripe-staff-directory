@@ -8,6 +8,14 @@ A directory of staff/employees with detail pages
 [![Build Status](https://scrutinizer-ci.com/g/dynamic/silverstripe-staff-directory/badges/build.png?b=master&s=585f094e899a0086fa58a175a8c39d577c1b8506)](https://scrutinizer-ci.com/g/dynamic/silverstripe-staff-directory/build-status/master)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-staff-directory/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-staff-directory)
 
+[![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-staff-directory/version)](https://packagist.org/packages/dynamic/silverstripe-staff-directory)
+[![Latest Unstable Version](https://poser.pugx.org/dynamic/silverstripe-staff-directory/v/unstable)](//packagist.org/packages/dynamic/silverstripe-staff-directory)
+[![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-staff-directory/downloads)](https://packagist.org/packages/dynamic/silverstripe-staff-directory)
+[![License](https://poser.pugx.org/dynamic/silverstripe-staff-directory/license)](https://packagist.org/packages/dynamic/silverstripe-staff-directory)
+[![Monthly Downloads](https://poser.pugx.org/dynamic/silverstripe-staff-directory/d/monthly)](https://packagist.org/packages/dynamic/silverstripe-staff-directory)
+[![Daily Downloads](https://poser.pugx.org/dynamic/silverstripe-staff-directory/d/daily)](https://packagist.org/packages/dynamic/silverstripe-staff-directory)
+
+
 ## Requirements
 
 - SilverStripe 4.x
