@@ -3,11 +3,13 @@
  */
 class ExampleComponent {
 
-    constructor() {
+    constructor()
+    {
 
     }
 
-    doStuff() {
+    doStuff()
+    {
         return true;
     }
 }

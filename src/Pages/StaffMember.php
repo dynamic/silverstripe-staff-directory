@@ -88,7 +88,7 @@ class StaffMember extends Page
     private static $show_in_sitetree = false;
 
     /**
-     * @var string 
+     * @var string
      */
     private static $table_name = 'StaffMember';
 
