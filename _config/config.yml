@@ -1,3 +1,8 @@
 ---
 Name: staffdirectoryconfig
 ---
+Dynamic\Staff\Page\StaffMember:
+  extensions:
+    - LittleGiant\CatalogManager\Extensions\CatalogPageExtension
+  parent_classes:
+    - Dynamic\Staff\Page\StaffDirectory
