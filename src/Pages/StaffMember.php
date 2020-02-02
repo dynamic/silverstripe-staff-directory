@@ -2,8 +2,10 @@
 
 namespace Dynamic\Staff\Pages;
 
+use Dynamic\Staff\Model\StaffDepartment;
 use SilverStripe\AssetAdmin\Forms\UploadField;
 use SilverStripe\Assets\Image;
+use SilverStripe\Forms\DropdownField;
 use SilverStripe\Forms\EmailField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
@@ -50,6 +52,7 @@ class StaffMember extends \Page
      */
     private static $has_one = array(
         'Image' => Image::class,
+        'Department' => StaffDepartment::class,
     );
 
     /**
@@ -110,9 +113,17 @@ class StaffMember extends \Page
                 ->setIsMultiUpload(false);
             $imageField->getValidator()->allowedExtensions = array('jpg', 'gif', 'png');
 
-            $fields->addFieldToTab('Root.Main', TextField::create('Position'), 'Content');
-            $fields->addFieldToTab('Root.Main', TextField::create('OfficeLocation'), 'Content');
-            $fields->addFieldToTab('Root.Main', $imageField, 'Content');
+            $fields->addFieldsToTab(
+                'Root.Main',
+                [
+                    TextField::create('Position'),
+                    DropdownField::create('DepartmentID', 'Department', StaffDepartment::get()->map())
+                        ->setEmptyString(''),
+                    TextField::create('OfficeLocation'),
+                    $imageField,
+                ],
+                'Content'
+            );
 
             $fields->addFieldsToTab('Root.Contact', array(
                 EmailField::create('Email'),
