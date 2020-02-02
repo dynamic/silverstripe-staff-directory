@@ -83,7 +83,7 @@ class StaffMember extends \Page
     /**
      * @var array
      */
-    private static $allowed_children = array();
+    private static $allowed_children = [];
 
     /**
      * This will display or hide the current class from the SiteTree. This variable can be

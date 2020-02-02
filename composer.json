@@ -14,6 +14,7 @@
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "require": {
+        "silverstripe/lumberjack": "^2.0",
         "silverstripe/recipe-cms": "^4.0",
         "silverstripe/vendor-plugin": "^1.0"
     },

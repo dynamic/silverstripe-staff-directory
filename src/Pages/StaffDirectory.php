@@ -3,6 +3,7 @@
 namespace Dynamic\Staff\Pages;
 
 use Page;
+use SilverStripe\Lumberjack\Model\Lumberjack;
 use SilverStripe\ORM\DataList;
 
 /**
@@ -29,6 +30,13 @@ class StaffDirectory extends Page
     /**
      * @var array
      */
+    private static $extensions = [
+        Lumberjack::class,
+    ];
+
+    /**
+     * @var array
+     */
     private static $allowed_children = array(
         StaffMember::class,
         StaffDirectory::class,
@@ -51,5 +59,13 @@ class StaffDirectory extends Page
         $this->extend('updateGetStaffMembers', $staffMembers);
 
         return $staffMembers;
+    }
+
+    /**
+     *
+     */
+    public function getLumberjackTitle()
+    {
+        return 'Staff Members';
     }
 }
