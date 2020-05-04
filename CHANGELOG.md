@@ -1,6 +1,16 @@
 # Changelog
 
-## [2.0.0](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.0) (2020-02-01)
+## [2.0.1](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.1) (2020-02-01)
+
+[Full Changelog](https://github.com/dynamic/silverstripe-staff-directory/compare/2.0.0...2.0.1)
+
+**Merged pull requests:**
+
+- FEATURE Staff Department, StaffAdmin [\#12](https://github.com/dynamic/silverstripe-staff-directory/pull/12) ([jsirish](https://github.com/jsirish))
+- BUGFIX revert composer name change [\#10](https://github.com/dynamic/silverstripe-staff-directory/pull/10) ([jsirish](https://github.com/jsirish))
+- BUGFIX composer name correction [\#9](https://github.com/dynamic/silverstripe-staff-directory/pull/9) ([jsirish](https://github.com/jsirish))
+
+## [2.0.0](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.0) (2018-10-19)
 
 [Full Changelog](https://github.com/dynamic/silverstripe-staff-directory/compare/1.0.0-alpha1...2.0.0)
 
