@@ -1,6 +1,6 @@
 <?php
 
-namespace Dynamic\Staff\Page;
+namespace Dynamic\Staff\Pages;
 
 /**
  * Class StaffMemberController
