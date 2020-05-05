@@ -1,6 +1,14 @@
 # Changelog
 
-## [2.0.2](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.2) (2020-05-04)
+## [2.0.3](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.3) (2020-05-05)
+
+[Full Changelog](https://github.com/dynamic/silverstripe-staff-directory/compare/2.0.2...2.0.3)
+
+**Merged pull requests:**
+
+- BUGFIX StaffMemberController corrected namespace [\#18](https://github.com/dynamic/silverstripe-staff-directory/pull/18) ([jsirish](https://github.com/jsirish))
+
+## [2.0.2](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.2) (2020-05-05)
 
 [Full Changelog](https://github.com/dynamic/silverstripe-staff-directory/compare/2.0.1...2.0.2)
 
