@@ -1,6 +1,19 @@
 # Changelog
 
-## [2.0.1](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.1) (2020-02-01)
+## [2.0.2](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.2) (2020-05-04)
+
+[Full Changelog](https://github.com/dynamic/silverstripe-staff-directory/compare/2.0.1...2.0.2)
+
+**Closed issues:**
+
+- BUG Incorrect namespace in config [\#16](https://github.com/dynamic/silverstripe-staff-directory/issues/16)
+
+**Merged pull requests:**
+
+- BUGFIX fixed CatalogAdmin config for StaffMember class [\#17](https://github.com/dynamic/silverstripe-staff-directory/pull/17) ([jsirish](https://github.com/jsirish))
+- BUGFIX remove branch alias [\#15](https://github.com/dynamic/silverstripe-staff-directory/pull/15) ([jsirish](https://github.com/jsirish))
+
+## [2.0.1](https://github.com/dynamic/silverstripe-staff-directory/tree/2.0.1) (2020-02-02)
 
 [Full Changelog](https://github.com/dynamic/silverstripe-staff-directory/compare/2.0.0...2.0.1)
 
