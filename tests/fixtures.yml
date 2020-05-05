@@ -1,6 +1,8 @@
 Dynamic\Staff\Pages\StaffDirectory:
   default:
-    Title: default
+    Title: 'Default'
+  two:
+    Title: 'Directory Two'
 
 Dynamic\Staff\Pages\StaffMember:
   one:

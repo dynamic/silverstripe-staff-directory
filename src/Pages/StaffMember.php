@@ -133,13 +133,20 @@ class StaffMember extends \Page
                 TextField::create('Website'),
                 TextField::create('Twitter'),
                 TextField::create('Facebook'),
-                TextField::create('LinkedIn'),
+                TextField::create('LinkedIn', 'LinkedIn'),
             ));
 
             $fields->dataFieldByName('Title')->setTitle('Name');
             $fields->dataFieldByName('Content')->setTitle('Biography');
         });
 
-        return parent::getCMSFields();
+        $fields = parent::getCMSFields();
+
+        $fields->insertBefore(
+            'Content',
+            $fields->dataFieldByName('ParentID')
+        );
+
+        return $fields;
     }
 }

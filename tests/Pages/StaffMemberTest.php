@@ -13,6 +13,10 @@ use SilverStripe\Forms\FieldList;
  */
 class StaffMemberTest extends SapphireTest
 {
+    /**
+     * @var string
+     */
+    protected static $fixture_file = '../fixtures.yml';
 
     /**
      * Tests getCMSFields()
@@ -20,7 +24,7 @@ class StaffMemberTest extends SapphireTest
     public function testGetCMSFields()
     {
         /** @var StaffMember $object */
-        $object = Injector::inst()->create(StaffMember::class);
+        $object = $this->objFromFixture(StaffMember::class, 'one');
         $this->assertInstanceOf(FieldList::class, $object->getCMSFields());
     }
 }
