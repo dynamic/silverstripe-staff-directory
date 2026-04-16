@@ -33,6 +33,6 @@ class StaffDepartment extends DataObject
      * @var array
      */
     private static $has_many = [
-        'StaffMembers' => StaffMember::class,
+        'StaffMembers' => StaffMember::class . '.Department',
     ];
 }

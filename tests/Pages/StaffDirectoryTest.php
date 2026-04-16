@@ -13,7 +13,6 @@ use SilverStripe\ORM\DataList;
  */
 class StaffDirectoryTest extends SapphireTest
 {
-
     /**
      * @var string
      */
