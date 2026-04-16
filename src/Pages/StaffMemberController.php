@@ -8,5 +8,4 @@ namespace Dynamic\Staff\Pages;
  */
 class StaffMemberController extends \PageController
 {
-
 }
