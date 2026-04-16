@@ -23,6 +23,7 @@ jobs:
       SS_DATABASE_SERVER: 127.0.0.1
       SS_DATABASE_USERNAME: root
       SS_DATABASE_PASSWORD: root
+      SS_DATABASE_CHOOSE_NAME: true
     strategy:
       matrix:
         php: ['8.1', '8.2', '8.3']
