@@ -32,7 +32,6 @@ class StaffDirectoryControllerTest extends SapphireTest
         $directory = Injector::inst()->create(StaffDirectory::class);
         $controller = new StaffDirectoryController($directory);
 
-        Config::modify()->set(StaffDirectoryController::class, 'page_size', 10);
         $this->assertEquals(10, $controller->getPageSize());
 
         Config::modify()->set(StaffDirectoryController::class, 'page_size', 12);
